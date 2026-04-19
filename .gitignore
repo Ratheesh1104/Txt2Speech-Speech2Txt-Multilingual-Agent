@@ -1,0 +1,17 @@
+*_pycache*
+*.txt
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
+*.pywz
+*.pyzw
+*.pyzwz
+*.pyzwzw
+*.pyzwzwz
+*.pyzwzwzw
+*voice-agent/.venv/
+.venv/
+__pycache__/
+*.pyc
