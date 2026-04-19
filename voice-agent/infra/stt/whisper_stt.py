@@ -5,8 +5,8 @@ import os
 import asyncio
 
 class WhisperSTT:
-    def __init__(self,model_size="small"):
-        self.model = WhisperModel(model_size, device="cpu", compute_type="int8", cpu_threads=4)
+    def __init__(self,model_size="base"):
+        self.model = WhisperModel(model_size, device="cpu", compute_type="int8", cpu_threads=2)
 
     def _save_wav(self, audio_bytes):
         temp = tempfile.NamedTemporaryFile(delete=False, suffix=".wav")
@@ -23,8 +23,8 @@ class WhisperSTT:
 
         segments, _ = self.model.transcribe(
             wav_path,
-            beam_size=1,
-            vad_filter=False,
+            best_of=1,
+            vad_filter=True,
         )
 
         text = " ".join([segment.text for segment in segments])

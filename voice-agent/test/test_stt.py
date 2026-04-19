@@ -21,7 +21,7 @@ async def main():
     vad = VADService()
     buffer = AudioBuffer()
 
-    stt_engine = WhisperSTT(model_size="small")
+    stt_engine = WhisperSTT(model_size="base")
     stt_service = STTService(stt_engine)
 
     recorder.start()
