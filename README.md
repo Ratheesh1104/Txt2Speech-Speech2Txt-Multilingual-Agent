@@ -1,4 +1,4 @@
-# 🎙️ Multilingual Real-Time Voice AI Agent
+# 🎙️ Multilingual Real-Time Conversational Voice AI Agent
 
 This project is a **real-time multilingual voice assistant** that listens to speech (Tamil, Hindi, English), converts it into text, translates it into a target language, and responds back with speech.
 
