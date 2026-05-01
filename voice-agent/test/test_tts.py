@@ -15,7 +15,7 @@ async def main():
     tts_engine = EdgeTTS(voice="en-US-AriaNeural")
     tts = TTSService(tts_engine)
 
-    await tts.speak("Hello, this is your AI assistant speaking.")
+    await tts.speak("I’m currently looking into what’s going on and coordinating with tech team members to fix everything quickly so we can get everything back to normal without any more disruptions.")
 
 
 asyncio.run(main())
